@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie App 2</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">	
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<script type="text/javascript">
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="text-danger col-sm-12 text-center">
+				Welcome to the Thunderdome. These are Now Playing.
+			</div>
+			<div class="col-sm-12 movies">
+				<% for(i = 0; i < movieData.length; i++){%>
+					<div class="col-sm-3">
+						<img src= "<%=imageBaseUrl + movieData[i].poster_path %>" />
+					</div>
+				<% } %>
+		</div>
+	</div>
+</body>
+</html>

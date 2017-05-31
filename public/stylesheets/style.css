@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  font: 40px "Ubuntu", Helvetica, Arial, sans-serif;
+}
+
+.movies{
+	font-size: 14px;
+}
+
+.movies img {
+	max-width: 100%;
+	margin: 5px;
+}
+
+a {
+  color: #00B7FF;
+}
