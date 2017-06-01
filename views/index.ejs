@@ -5,22 +5,33 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">	
 	<link rel="stylesheet" href="stylesheets/style.css">
-	<script type="text/javascript">
-	</script>
 </head>
 <body>
+
 	<div class="container">
 		<div class="row">
-			<div class="text-danger col-sm-12 text-center">
-				Welcome to the Thunderdome. These are Now Playing.
+
+			<div class="col-sm-12 text-center title">
+				<%= title%>
 			</div>
+
+			<div class="col-sm-6 col-sm-offset-3 text-center">
+				<form id="search-form" class="form-inline" action="/search" method="post">
+					<input class="form-control" type='text' placeholder="Movie Title" name="searchString" />
+					<button type="submit" class="btn">Search</button>
+				</form>
+			</div>
+
 			<div class="col-sm-12 movies">
 				<% for(i = 0; i < movieData.length; i++){%>
 					<div class="col-sm-3">
-						<img src= "<%=imageBaseUrl + movieData[i].poster_path %>" />
+						<a href="/movie/<%= movieData[i].id%>"><img src= "<%=imageBaseUrl + movieData[i].poster_path %>" /></a>
 					</div>
 				<% } %>
+			</div>
+		
 		</div>
-	</div>
+	</div>	
+
 </body>
 </html>

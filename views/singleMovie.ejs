@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= movieData.title%></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">	
+	<link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 movie-poster">
+				<img src= "<%=imageBaseUrl + movieData.poster_path %>" />
+			</div>
+			<div class="col-sm-6 movie-stuffs">
+				<div class="movieTitle">
+					<a href="http://www.imdb.com/title/<%= movieData.imdb_id%>"><%= movieData.title%></a>
+				</div>
+				<div class="basicInfo">
+					<div class="releaseDate">
+						<b>Releases:</b> <%= movieData.release_date%>
+					</div>
+					<div class="runTime">
+						<b>Runtime:</b> <%= movieData.runtime%> minutes
+					</div>
+				</div>
+				<div class="movieOverview">
+					<%= movieData.overview%>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

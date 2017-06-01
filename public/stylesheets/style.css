@@ -1,10 +1,12 @@
 body {
   padding: 50px;
-  font: 40px "Ubuntu", Helvetica, Arial, sans-serif;
+  font: 14px "Ubuntu", Helvetica, Arial, sans-serif;
+  background-color: #555;
 }
 
-.movies{
-	font-size: 14px;
+.title{
+	font-size: 30px;
+	color: aquamarine;
 }
 
 .movies img {
@@ -12,6 +14,57 @@ body {
 	margin: 5px;
 }
 
+.btn {
+	background-color: plum;
+	color: white;
+	text-shadow: 0px 0px 1px #333;
+}
+
 a {
   color: #00B7FF;
 }
+
+img:hover{
+	max-width: 101%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.movie-stuffs{
+	color: white;
+}
+
+.movie-poster img{
+	max-width: 100%;
+}
+
+.movieTitle {
+	height: 75px;
+	text-align: center;
+	color: white;
+	line-height: 75px;
+	font-size: 17px;
+}
+
+.releaseDate, .runTime{
+	text-align: center;
+	display: inline-block;
+	width: 47%;
+}
+
+a, a:active {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{
+	color: springgreen;
+	text-decoration: none;
+	}
+.basicInfo{
+	margin-top: 50px;
+}
+.movieOverview {
+	margin-top: 10px;
+}
+
